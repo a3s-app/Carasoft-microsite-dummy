@@ -182,8 +182,9 @@ ul {
 
 /* ========== VENDOR SUB-HEADER ========== */
 .adobe-header {
-    background: #fff;
+    background: #f5f5f5;
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #eee;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -195,52 +196,53 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 15px;
+    padding: 18px 15px;
 }
 
-.adobe-logo {
-    height: 40px;
+.vendor-logo-img {
+    height: 50px;
     object-fit: contain;
-}
-
-.vendor-logo-text {
-    font-size: 22px;
-    font-weight: 800;
-    color: #1a237e;
-    letter-spacing: -0.5px;
-}
-
-.vendor-logo-text span {
-    color: #3155A4;
 }
 
 .adobe-contact {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     font-size: 13px;
-    color: #333;
 }
 
-.adobe-contact span {
+.adobe-contact a {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.adobe-contact a:hover {
+    text-decoration: underline;
 }
 
 .adobe-contact i {
+    color: #3155A4;
+    font-size: 14px;
+}
+
+.live-chat-link i {
     color: #3155A4;
 }
 
 .btn-request-quote {
     background: #3155A4;
     color: #fff;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border-radius: 4px;
     font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.5px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
     transition: all 0.2s;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-request-quote:hover {
