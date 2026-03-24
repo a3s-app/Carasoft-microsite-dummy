@@ -368,11 +368,216 @@
     color: #ccc;
 }
 
+/* ========== ABOUT PAGE ========== */
+.about-badge {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #3155A4;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.about-stat-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 22px;
+    background: #fff;
+    flex: 1;
+    transition: border-color 0.2s;
+}
+
+.about-stat-card:hover {
+    border-color: #3155A4;
+}
+
+.about-stat-value {
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+}
+
+.about-stat-label {
+    font-size: 11px;
+    color: #666;
+    margin: 0;
+}
+
+.about-section {
+    background: #f8f9fa;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.about-section-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-section-badge {
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.about-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.about-section-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-grid-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.about-grid-icon {
+    width: 40px;
+    height: 40px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-grid-icon i {
+    color: #3155A4;
+    font-size: 15px;
+}
+
+.about-grid-item h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 4px;
+}
+
+.about-grid-item p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+.about-trusted {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-trusted-clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.about-cta {
+    text-align: center;
+    padding: 35px;
+    background: #3155A4;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.about-cta h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.about-cta p {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    margin-bottom: 18px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.about-cta-primary {
+    display: inline-block;
+    background: #fff;
+    color: #3155A4;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+
+.about-cta-primary:hover {
+    background: #f0f0f0;
+    text-decoration: none;
+    color: #3155A4;
+}
+
+.about-cta-secondary {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.about-cta-secondary:hover {
+    background: rgba(255,255,255,0.15);
+    text-decoration: none;
+    color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .product-phase-grid { grid-template-columns: 1fr; }
     .product-features-grid { grid-template-columns: 1fr; }
     .key-features-grid { grid-template-columns: 1fr 1fr; }
     .workflow-strip { flex-wrap: wrap; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-stats { flex-direction: column; }
+    .about-cta-buttons { flex-direction: column; align-items: center; }
 }
 
 /* ========== HERO BANNER CARDS ========== */
