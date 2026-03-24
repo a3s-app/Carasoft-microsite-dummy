@@ -180,7 +180,7 @@ ul {
 
 .nav-item i {
     font-size: 10px;
-    color: #999;
+    color: #666;
 }
 
 /* ========== VENDOR SUB-HEADER ========== */
@@ -1082,7 +1082,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #aaa;
+    color: #777;
     margin-bottom: 12px;
     padding-bottom: 8px;
     border-bottom: 1px solid #555;

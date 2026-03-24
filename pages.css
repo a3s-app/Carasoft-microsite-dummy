@@ -138,7 +138,7 @@
 
 .phase-label {
     font-size: 11px;
-    color: #999;
+    color: #666;
     display: block;
 }
 
@@ -768,7 +768,7 @@
 }
 
 .contract-dates i {
-    color: #999;
+    color: #666;
     margin-right: 6px;
     font-size: 11px;
 }
@@ -842,7 +842,7 @@
 
 .contract-option {
     font-size: 12px;
-    color: #888;
+    color: #666;
     font-style: italic;
     margin: 2px 0 0;
 }
@@ -928,7 +928,7 @@
 
 .contract-item .contract-note {
     font-size: 11px;
-    color: #999;
+    color: #666;
     font-style: italic;
 }
 
@@ -1145,7 +1145,7 @@
 
 .news-item .news-date {
     font-size: 12px;
-    color: #999;
+    color: #666;
     margin-bottom: 8px;
 }
 
@@ -1318,7 +1318,7 @@
 
 .category-count {
     font-size: 11px;
-    color: #999;
+    color: #666;
 }
 
 .client-tags {
