@@ -464,185 +464,130 @@ ul {
     min-width: 0;
 }
 
-/* ========== HERO CAROUSEL ========== */
-.hero-carousel {
+/* ========== HERO BANNER ========== */
+.hero-banner {
     margin-bottom: 25px;
-}
-
-.carousel-container {
-    position: relative;
+    border-radius: 6px;
     overflow: hidden;
-    border-radius: 4px;
-}
-
-.carousel-slides {
-    position: relative;
-    height: 350px;
-}
-
-.carousel-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-}
-
-.slide-content {
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 40px;
-}
-
-.slide-webinar {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
 }
 
-.slide-blog {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+.hero-banner-inner {
+    display: flex;
+    align-items: center;
+    padding: 45px 50px;
+    gap: 40px;
 }
 
-.slide-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to left, rgba(255,255,255,0.05), transparent);
+.hero-text {
+    flex: 1;
+    min-width: 0;
 }
 
-.slide-text {
-    position: relative;
-    z-index: 2;
-    max-width: 60%;
-}
-
-.slide-logos {
+.hero-brand-row {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 10px;
 }
 
-.slide-brand {
+.hero-brand {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
 }
 
-.slide-x {
-    color: #fff;
-    font-size: 16px;
-}
-
-.cpe-badge {
+.hero-wcag-badge {
     background: rgba(255,255,255,0.15);
     color: #4CAF50;
-    padding: 4px 10px;
+    padding: 4px 12px;
     border-radius: 4px;
     font-size: 11px;
     font-weight: 600;
 }
 
-.slide-label {
-    color: #aab8d0;
-    font-size: 12px;
-    letter-spacing: 1px;
+.hero-label {
+    color: rgba(255,255,255,0.55);
+    font-size: 11px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.slide-title {
+.hero-title {
     color: #fff;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
-.slide-date,
-.slide-time {
-    color: #ccc;
-    font-size: 13px;
+.hero-desc {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.hero-standards {
+    color: rgba(255,255,255,0.45);
+    font-size: 12px;
+    letter-spacing: 1.5px;
     margin-bottom: 4px;
 }
 
-.slide-btn {
+.hero-cta-btn {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 18px;
     background: #fff;
-    color: #333;
-    padding: 10px 24px;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 13px;
+    color: #1a1a2e;
+    padding: 11px 28px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
     transition: all 0.2s;
 }
 
-.slide-btn:hover {
-    background: #eee;
+.hero-cta-btn:hover {
+    background: #e8e8e8;
     text-decoration: none;
 }
 
-.blog-badge {
-    display: inline-block;
-    background: #e74c3c;
-    color: #fff;
-    padding: 5px 14px;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.slide-link {
-    color: #4da8da;
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-.slide-link:hover {
-    color: #fff;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.4);
-    color: #fff;
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
+.hero-image {
+    flex: 0 0 280px;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
-    transition: background 0.2s;
 }
 
-.carousel-btn:hover {
-    background: rgba(0,0,0,0.7);
+.hero-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    opacity: 0.9;
 }
 
-.carousel-btn.prev {
-    left: 10px;
-}
-
-.carousel-btn.next {
-    right: 10px;
+@media (max-width: 768px) {
+    .hero-banner-inner {
+        flex-direction: column;
+        padding: 30px 25px;
+        gap: 25px;
+        text-align: center;
+    }
+    .hero-brand-row {
+        justify-content: center;
+    }
+    .hero-image {
+        flex: 0 0 auto;
+    }
+    .hero-image img {
+        max-width: 200px;
+    }
+    .hero-title {
+        font-size: 24px;
+    }
 }
 
 /* ========== DESCRIPTION SECTION ========== */
