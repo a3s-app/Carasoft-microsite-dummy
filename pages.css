@@ -388,7 +388,7 @@
 }
 
 .hero-product-banner.p15r {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 50%, #5dade2 100%);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
 }
 
 .hero-product-top {
@@ -497,6 +497,86 @@
 }
 
 /* ========== CONTRACTS PAGE ========== */
+.contracts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.contract-entry {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 18px 22px;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contract-entry:hover {
+    border-color: #3155A4;
+    box-shadow: 0 2px 12px rgba(49,85,164,0.08);
+}
+
+.contract-entry-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 8px;
+}
+
+.contract-icon {
+    width: 36px;
+    height: 36px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contract-icon i {
+    color: #3155A4;
+    font-size: 14px;
+}
+
+.contract-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 2px;
+    line-height: 1.3;
+}
+
+.contract-entry .contract-id {
+    font-size: 13px;
+    color: #3155A4;
+    font-weight: 600;
+    font-family: monospace;
+    margin: 0;
+}
+
+.contract-dates {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+}
+
+.contract-dates i {
+    color: #999;
+    margin-right: 6px;
+    font-size: 11px;
+}
+
+.contract-note {
+    display: inline-block;
+    font-size: 11px;
+    color: #e67e22;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
 .contracts-content {
     display: flex;
     gap: 25px;
