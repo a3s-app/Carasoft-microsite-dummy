@@ -37,7 +37,7 @@ ul {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 8px 15px;
     gap: 20px;
@@ -99,7 +99,7 @@ ul {
 
 .logo-text {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 700;
     color: #3155A4;
     letter-spacing: -1px;
 }
@@ -149,7 +149,8 @@ ul {
 
 /* ========== MAIN NAV ========== */
 .main-nav {
-    background: #3155A4;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .nav-inner {
@@ -160,10 +161,10 @@ ul {
 }
 
 .nav-item {
-    color: #fff;
+    color: #333;
     padding: 12px 20px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -172,12 +173,14 @@ ul {
 }
 
 .nav-item:hover {
-    background: rgba(255,255,255,0.15);
+    background: #f5f5f5;
     text-decoration: none;
+    color: #3155A4;
 }
 
 .nav-item i {
     font-size: 10px;
+    color: #999;
 }
 
 /* ========== VENDOR SUB-HEADER ========== */
