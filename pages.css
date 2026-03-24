@@ -404,6 +404,253 @@
     margin: 0 auto;
 }
 
+/* ========== CLIENTS PAGE ========== */
+.clients-intro {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.clients-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.clients-stat strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.clients-stat-divider {
+    width: 1px;
+    height: 16px;
+    background: #ddd;
+}
+
+.clients-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3155A4;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.testimonial-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 22px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow 0.2s;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.testimonial-icon {
+    color: #3155A4;
+    font-size: 16px;
+    opacity: 0.4;
+}
+
+.testimonial-text {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+}
+
+.testimonial-footer {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    margin-top: auto;
+}
+
+.testimonial-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.testimonial-role {
+    font-size: 11px;
+    color: #666;
+    margin: 0;
+}
+
+.testimonial-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.tag-blue {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.tag-green {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.tag-red {
+    background: #fce4ec;
+    color: #c62828;
+}
+
+.client-category {
+    margin-bottom: 22px;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.category-icon {
+    width: 32px;
+    height: 32px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-icon i {
+    color: #3155A4;
+    font-size: 13px;
+}
+
+.category-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.category-count {
+    font-size: 11px;
+    color: #999;
+}
+
+.client-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.client-tag {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 8px 14px;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+    transition: all 0.2s;
+}
+
+.client-tag:hover {
+    border-color: #3155A4;
+    color: #3155A4;
+    background: #f0f4ff;
+}
+
+.clients-cta {
+    text-align: center;
+    padding: 35px;
+    background: #3155A4;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.clients-cta-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.clients-cta-desc {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    margin-bottom: 18px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-cta-btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.cta-btn-primary {
+    display: inline-block;
+    background: #fff;
+    color: #3155A4;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.cta-btn-primary:hover {
+    background: #e8e8e8;
+    text-decoration: none;
+    color: #3155A4;
+}
+
+.cta-btn-primary i {
+    margin-left: 4px;
+    font-size: 11px;
+}
+
+.cta-btn-outline {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.cta-btn-outline:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.1);
+    text-decoration: none;
+    color: #fff;
+}
+
 /* ========== RESPONSIVE ========== */
 @media screen and (max-width: 1024px) {
     .page-wrapper {
@@ -436,5 +683,14 @@
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .clients-cta-btns {
+        flex-direction: column;
+        align-items: center;
     }
 }
