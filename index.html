@@ -121,22 +121,26 @@
     <!-- Main Content Area -->
     <div class="content-wrapper">
         <div class="main-content">
-            <!-- Hero Section -->
-            <section class="hero-banner">
-                <div class="hero-banner-inner">
-                    <div class="hero-text">
-                        <div class="hero-brand-row">
-                            <span class="hero-brand">Perspective Tester</span>
-                            <span class="hero-wcag-badge"><i class="fas fa-universal-access"></i> WCAG 2.2 AA</span>
+            <!-- Hero Carousel -->
+            <section class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide active">
+                            <a href="solutions.html"><img src="art1.png" alt="Perspective Tester - Engineering Equity for the Digital World"></a>
                         </div>
-                        <p class="hero-label">ENGINEERING EQUITY FOR THE DIGITAL WORLD</p>
-                        <h2 class="hero-title">Accessibility Testing & Compliance at Scale</h2>
-                        <p class="hero-desc">Achieve and maintain WCAG 2.2 compliance with enterprise-grade tooling</p>
-                        <p class="hero-standards">WCAG 2.2 | SECTION 508 | ADA TITLE II</p>
-                        <a href="schedule-demo.html" class="hero-cta-btn">Get a Free Audit</a>
+                        <div class="carousel-slide">
+                            <a href="p15r.html"><img src="art2.png" alt="P15R - Your Accessibility Operations Command Center"></a>
+                        </div>
+                        <div class="carousel-slide">
+                            <a href="a3s.html"><img src="art3.png" alt="A3S - Continuous Accessibility, Complete Compliance"></a>
+                        </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="capitol-dome.png" alt="Capitol Building">
+                    <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn carousel-next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide(1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide(2)"></span>
                     </div>
                 </div>
             </section>
@@ -146,6 +150,34 @@
                 <h3>Let The Leaders in ADA Web Compliance Solve Your Accessibility Issues!</h3>
                 <p>Make your websites and digital assets accessible with Perspective Tester's industry-leading approach to ADA Web compliance. Meet all federal and state requirements, including the newly-updated ADA Title II rules published in April 2024! Perspective Tester utilizes manual testing with assistive technologies - the ONLY method approved by both the Department of Justice and the World Wide Web Consortium (the creators of the WCAG standards).</p>
                 <p>We also provide full remediation services - a complete turn-key solution for accessibility compliance. Achieve compliance for your websites, web systems, payment portals, mobile apps, custom software applications, documents, video content and more! Perspective Tester is your one-stop shop for all things related to digital accessibility.</p>
+            </section>
+
+            <!-- Document Remediation Services -->
+            <section style="margin-bottom:30px;padding:28px;background:#e3f2fd;border-radius:10px;border-left:5px solid #3155A4;">
+                <div style="display:flex;align-items:flex-start;gap:24px;">
+                    <div style="flex:0 0 60px;text-align:center;padding-top:4px;">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="52" height="52" rx="10" fill="#fff" stroke="#3155A4" stroke-width="2"/>
+                            <path d="M18 14h14l8 8v20a2 2 0 01-2 2H18a2 2 0 01-2-2V16a2 2 0 012-2z" fill="#3155A4" opacity="0.1" stroke="#3155A4" stroke-width="1.5"/>
+                            <path d="M32 14v8h8" stroke="#3155A4" stroke-width="1.5" fill="none"/>
+                            <path d="M22 30l3 3 6-6" stroke="#3155A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <div style="flex:1;">
+                        <h3 style="font-size:18px;font-weight:700;color:#1a237e;margin-bottom:8px;">
+                            <i class="fas fa-file-alt" style="color:#3155A4;margin-right:6px;"></i>
+                            Document Remediation Services
+                        </h3>
+                        <p style="font-size:14px;color:#333;line-height:1.7;margin-bottom:10px;">Perspective Tester provides comprehensive <strong>document remediation services</strong> to make your PDFs, Word documents, spreadsheets, and other digital documents fully accessible and compliant with WCAG 2.2, Section 508, and ADA requirements. Our IAAP-certified specialists remediate documents using assistive technology testing to ensure they are screen-reader compatible, properly tagged, and meet all federal accessibility standards.</p>
+                        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+                            <span style="display:inline-block;background:#fff;color:#3155A4;padding:5px 14px;border-radius:4px;font-size:12px;font-weight:600;border:1px solid #3155A4;">PDF Remediation</span>
+                            <span style="display:inline-block;background:#fff;color:#3155A4;padding:5px 14px;border-radius:4px;font-size:12px;font-weight:600;border:1px solid #3155A4;">Word Documents</span>
+                            <span style="display:inline-block;background:#fff;color:#3155A4;padding:5px 14px;border-radius:4px;font-size:12px;font-weight:600;border:1px solid #3155A4;">Spreadsheets</span>
+                            <span style="display:inline-block;background:#fff;color:#3155A4;padding:5px 14px;border-radius:4px;font-size:12px;font-weight:600;border:1px solid #3155A4;">Presentations</span>
+                            <span style="display:inline-block;background:#fff;color:#3155A4;padding:5px 14px;border-radius:4px;font-size:12px;font-weight:600;border:1px solid #3155A4;">Forms & Fillable PDFs</span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Four Product Offerings -->
