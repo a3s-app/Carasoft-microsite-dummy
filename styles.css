@@ -359,15 +359,17 @@ ul {
 /* ========== COMPLIANCE BANNER (was OneGov) ========== */
 .onegov-banner {
     background: linear-gradient(135deg, #1a3a7a 0%, #2a6dd4 50%, #4da8da 100%);
-    margin: 0 auto;
+    margin: 20px auto 0;
     max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(26,58,122,0.25);
 }
 
 .onegov-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 25px;
+    padding: 20px 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -379,25 +381,27 @@ ul {
 }
 
 .onegov-icon {
-    background: rgba(255,255,255,0.2);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    width: 52px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .onegov-icon i {
-    color: #fff;
-    font-size: 24px;
+    color: #ffd700;
+    font-size: 22px;
 }
 
 .onegov-title {
     display: block;
     color: #ffd700;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .onegov-subtitle {
@@ -405,6 +409,7 @@ ul {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+    margin-top: 2px;
 }
 
 .onegov-right {
