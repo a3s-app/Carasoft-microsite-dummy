@@ -301,6 +301,61 @@ ul {
     font-size: 16px;
 }
 
+/* ========== VENDOR NAV DROPDOWN ========== */
+.adobe-nav-item-wrapper {
+    position: relative;
+}
+
+.adobe-nav-item-wrapper .adobe-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.adobe-nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 220px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 0 0 6px 6px;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.adobe-nav-item-wrapper:hover .adobe-nav-dropdown {
+    display: block;
+}
+
+.adobe-nav-dropdown a {
+    display: block;
+    padding: 12px 18px;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.adobe-nav-dropdown a:hover {
+    background: #f0f4ff;
+    color: #3155A4;
+    text-decoration: none;
+}
+
+.adobe-nav-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.adobe-nav-dropdown a i {
+    margin-right: 8px;
+    color: #3155A4;
+    width: 16px;
+    text-align: center;
+}
+
 /* ========== COMPLIANCE BANNER (was OneGov) ========== */
 .onegov-banner {
     background: linear-gradient(135deg, #1a3a7a 0%, #2a6dd4 50%, #4da8da 100%);
